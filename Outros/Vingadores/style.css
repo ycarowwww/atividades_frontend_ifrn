@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+header ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: color .5s;
+}
+
+header ul li a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+header .search {
+    position: relative;
+}
+
+header .search input {
+    background-color: #313131;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 20px;
+    outline: 0;
+    padding: 5px 10px;
+    transition: background-color .5s;
+}
+
+header .search input:focus {
+    background-color: #404040;
+}
+
+header .search button {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    color: white;
+    background-color: #404040;
+    border: 0;
+    border-radius: 50%;
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+header .search button:hover {
+    background-color: #707070;
+}
+
+header .search button span {
+    font-size: 1rem;
+}
+
+main {
+    width: min(100dvw, 1100px);
+    margin-inline: auto;
+    padding-top: 20px;
+}
+
+main .movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+main .movies .card-movie {
+    border: 1px solid gray;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto 200px;
+}
+
+main .movies .card-movie h3 {
+    text-align: center;
+}
+
+main .movies .card-movie figure {
+    max-width: 100%;
+    height: 70%;
+}
+
+main .movies .card-movie figure img {
+    width: 100%;
+    height: 100%;
+}

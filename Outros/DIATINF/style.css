@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 100dvh;
+}
+
+header {
+    background-color: darkcyan;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-block: 40px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+header ul li + li {
+    margin-top: 10px;
+}
+
+header ul li a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    grid-column: span 5;
+    padding: 40px;
+}
+
+main .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .search div * {
+    font-size: 1.1rem;
+}
+
+main .search .search-buttons button {
+    cursor: pointer;
+}
+
+main .reports h1 {
+    margin-block: 25px 50px;
+}
+
+main .reports .reports-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding-right: 200px;
+}
+
+main .reports .reports-cards .card {
+    display: grid;
+    grid-template-rows: 150px 75px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px gray;
+}
+
+main .reports .reports-cards .card .title-card {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+
+main .reports .reports-cards .card .title-card a {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+main .reports .reports-cards .card .actions {
+    color: darkgreen;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: scale .5s;
+}
+
+main .reports .reports-cards .card .actions i:hover {
+    scale: 1.1;
+}
