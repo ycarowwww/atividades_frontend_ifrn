@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+:root {
+    --yellow1: #F5BD26;
+    --yellow2: #F9F1DC;
+    --yellow3: #F5BE2680;
+    --yellow4: #D39B02;
+    --font-base: Garamond, serif;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: var(--font-base);
+}
+
+h1, h2, p, figure, ul, header, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--yellow2);
+}
+
+header h1 {
+    text-align: center;
+    scale: .9;
+}
+
+header nav {
+    background-color: white;
+    padding-block: 5px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+
+    & a {
+        color: var(--yellow4);
+        font-size: 1.5rem;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 10px;
+        transition: background-color .25s ease;
+    }
+
+    & a:hover {
+        background-color: var(--yellow2);
+    }
+}
+
+main figure img {
+    display: block;
+    margin-inline: auto;
+    margin-block: 10px;
+    border-block: 3px solid var(--yellow1);
+    width: min(calc(100dvw - 17px), 1300px);
+}
+
+main ul {
+    list-style-type: none;
+    width: min(calc(100dvw - 17px), 1150px);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+    justify-items: center;
+    gap: 10px;
+
+    & img {
+        display: inline-block;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        transition: scale .25s ease, filter .25s ease;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+    
+    &:has(img:hover) img:not(:hover) {
+        scale: .9;
+        filter: grayscale(.5);
+    }
+}
+
+main h2 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-block: 20px;
+    border-bottom: 2px solid var(--yellow3);
+}
+
+main p {
+    text-align: center;
+    width: min(calc(100dvw - 17px), 600px);
+    margin-block: 40px;
+    margin-inline: auto;
+}
+
+footer {
+    background-color: white;
+    padding-block: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+
+    & address {
+        text-align: center;
+    }
+}
