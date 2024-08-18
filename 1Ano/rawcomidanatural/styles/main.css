@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+:root {
+    --yellow1: #F5BD26;
+    --yellow2: #F9F1DC;
+    --yellow3: #F5BE2680;
+    --yellow4: #D39B02;
+    --font-base: Garamond, serif;
+    --width-100vw: calc(100dvw - (100dvw - 100%));
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: var(--font-base);
+}
+
+h1, h2, h3, p, figure, ul, header, main, footer { /* Simple CSS Reset */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--yellow2);
+}

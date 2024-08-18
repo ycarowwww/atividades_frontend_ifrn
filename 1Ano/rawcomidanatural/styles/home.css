@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import "main.css";
+@import "menu-footer.css";
+
+main figure img {
+    display: block;
+    margin-inline: auto;
+    margin-block: 10px;
+    border-block: 3px solid var(--yellow1);
+    width: min(var(--width-100vw), 1300px);
+}
+
+main ul {
+    width: min(var(--width-100vw), 1050px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    list-style-type: none;
+}
+
+main ul li {
+    display: inline-block;
+    margin-inline: auto;
+}
+
+main ul img {
+    display: inline-block;
+    width: 156px;
+    aspect-ratio: 1 / 1;
+    transition: scale .25s ease, filter .25s ease;
+    cursor: pointer;
+}
+
+main ul img:hover {
+    scale: 1.1;
+}
+
+main ul:has(img:hover) img:not(:hover) {
+    scale: .9;
+    filter: grayscale(.5);
+}
+
+main h2 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-block: 20px;
+    border-bottom: 2px solid var(--yellow3);
+}
+
+main p {
+    text-align: center;
+    width: min(var(--width-100vw), 600px);
+    margin: 40px auto;
+}

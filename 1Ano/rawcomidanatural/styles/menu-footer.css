@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "main.css";
+
+header h1 {
+    text-align: center;
+    scale: .9;
+}
+
+header nav {
+    background-color: white;
+    padding-block: 5px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: block;
+}
+
+header nav ul li a {
+    color: var(--yellow4);
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color .25s ease;
+}
+
+header nav ul a:hover {
+    background-color: var(--yellow2);
+}
+
+footer {
+    background-color: white;
+    padding-block: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+footer address {
+    text-align: center;
+}

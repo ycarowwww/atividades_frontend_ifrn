@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import "main.css";
+@import "menu-footer.css";
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: min(var(--width-100vw), 800px);
+    margin: 15px auto;
+}
+
+main > section {
+    align-self: center;
+    margin: auto;
+}
+
+main > section h2 {
+    font-size: 2.5rem;
+}
+
+main > section .list-address {
+    padding-block: 20px;
+}
+
+main > section address {
+    font-size: 1.2rem;
+    display: block;
+}
+
+main > section address span {
+    font-style: normal;
+}
+
+main > section a {
+    display: inline-block;
+    color: var(--yellow4);
+    font-size: 1.8rem;
+    text-align: center;
+    background: none;
+    border: 0;
+    outline: 0;
+    transition: color .5s ease-out;
+}
+
+main > section a + a {
+    margin-left: 15px;
+}
+
+main > section a:hover {
+    color: black;
+}
+
+main > form {
+    gap: 15px;
+    flex-direction: column;
+    width: max(50%, 360px);
+}
+
+main > form :where(input, textarea) {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: 2px solid lightgray;
+    outline: 0;
+    width: 100%;
+    margin-block: 5px;
+    transition: background-color .5s ease;
+}
+
+main > form :where(input, textarea):focus {
+    background-color: #eaf2f5;
+}
+
+main > form button {
+    background-color: var(--yellow4);
+    border: 2px solid var(--yellow1);
+    border-radius: 10px;
+    outline: 0;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 4px;
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
+
+main > form button:hover {
+    background-color: var(--yellow1);
+}
