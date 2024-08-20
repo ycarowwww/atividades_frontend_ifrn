@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import "main.css";
-@import "menu-footer.css";
 
 main {
     width: min(var(--width-100vw), 700px);
