@@ -10,6 +10,29 @@ main > section {
     justify-content: space-between;
 }
 
+main > section:has(table) {
+    justify-content: center;
+    background-color: var(--yellow3);
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+main > section caption {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-block: 5px;
+}
+
+main > section :where(table, tr, td, th) {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+main > section :where(td, th) {
+    padding: 2px 6px;
+}
+
 main > section picture {
     width: 40%;
     aspect-ratio: 1 / 1;
@@ -36,7 +59,7 @@ main > section p.product-price {
     padding-bottom: 10px;
 }
 
-main > section p.product-price::before {
+main > section td:nth-child(3)::before, main > section p.product-price::before {
     content: "R$";
 }
 
