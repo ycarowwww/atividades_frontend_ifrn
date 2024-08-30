@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-block: 5px;
+    background-color: lightblue;
+}
+
+table, caption, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px 10px;
+}
+
+thead th:nth-child(1) {
+    background-color: lightsalmon;
+}
+
+thead th:nth-child(2) {
+    background-color: gold;
+}
+
+thead th:nth-child(3) {
+    background-color: silver;
+}
+
+thead th:nth-child(4) {
+    background-color: burlywood;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tfoot {
+    background-color: lightslategray;
+    color: white;
+}

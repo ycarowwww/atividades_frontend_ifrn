@@ -1,0 +1,38 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+table, tr, td, th {
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px 10px;
+}
+
+thead, thead th {
+    background-color: #0CB026;
+    color: white;
+}
+
+img {
+    max-width: 1em;
+    max-height: 1em;
+    display: block;
+    margin: auto;
+}
