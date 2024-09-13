@@ -27,6 +27,7 @@ Você pode usar esse repositório para saber quais são as atividades da Matéri
 ## Autores
 
 - Eu ([Yzakiel1390](https://github.com/Yzakiel1390/))
+- Vtamorim ([vtamorim](https://github.com/vtamorim/))
 
 ## Licença
 
