@@ -1,45 +1,64 @@
 
-form{
-    position: absolute;
-    left: 45em;
-    top: 15em;
-    width: 25em;
-    border-radius: 10px;
-    height: 30em;
-    padding: 35px;
-    background-color: aqua;
-}
-input,button{
 
-    display: block;
+
+form{
+    background-color:transparent ;
+    width: 22em;
+    height: 25em;
+    margin: auto;
+    padding-left: 1.5em;
+    border: 1px black solid;
+    border-radius: 2px;
+    margin-top: 10em;
 }
-button{
-    position: absolute;
-    top: 35em;
-    height: 70px;
-    width: 28em;
-    left: 3.5em;
-    transition: border-radius 0.1s ease-in ;
-    background-color: royalblue;
+form input{
+    display: block;
+    margin-top: 5em;
+    height: 3em;
+    width: 23em;
 }
 h1{
-    text-align: center;
+padding-left: 1.3em;
 }
-input{
-    margin-top: 40px;
-    width: 30em;
-    height: 40px;
-    border-radius: 1em;
-    background-color: transparent;
-    border-bottom: 2px solid white;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+form button{
+    background-color: #0c6a92;
+    height: 3em;
+    width: 20em;
+    margin: auto;
+    margin-left: 1.3em;
+    margin-top: 1em;
+    color: aliceblue;
+    transition: border-radius 0.2s ease-in;
 }
-input[type='date']{
-    width: 10em;
-}
-button:hover{
+form button:hover{
     border-radius: 10px;
-    border: 2px solid darkcyan;
+    border: 1px solid aquamarine;
+}
+main div{
+    width: 36em;
+    height: 11em;
+    margin: auto;
+    border: 0.01mm lightgray solid;
+    padding-left: 15px;
+    border-radius: 7px;
+    margin-top: 5em;
+    transition: box-shadow 0.5 ease-in;
+}
+main div button{
+    background-color:transparent ;
+    color: black;
+    border: 0.01mm lightgray solid;
+    border-radius: 5px;
+    height: 3em;
+    width: 10em;
+    transition: background-color 1.2s ease-in;
+}
+main{
+    height: 47em;
+}
+main div button:hover{
+    background-color: lightgray;
+}
+main div:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }

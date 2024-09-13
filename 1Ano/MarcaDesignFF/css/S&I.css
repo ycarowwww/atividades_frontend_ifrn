@@ -1,0 +1,19 @@
+
+h2:nth-child(1){
+    text-align: center;
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    gap: 70px; 
+}
+details{
+    padding: 20px;
+    background-color: #0c6a92;
+    max-width: 350px;
+    height: 150px;
+    border-radius: 2px;
+    border: 1px black solid ;
+    color: white;
+}

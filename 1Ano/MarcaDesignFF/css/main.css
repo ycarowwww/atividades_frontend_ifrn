@@ -40,26 +40,29 @@ header div:last-child h1 {
     padding-block: 300px;
 }
 
-ul {
+ul a, ul {
     list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+header ul{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-ul a {
+header ul a {
     color: white;
     display: inline-block;
     font-size: 1.2rem;
     font-weight: bold;
-    text-decoration: none;
     padding: 10px 20px;
     border-radius: 10px;
     transition: background-color .5s ease, box-shadow .5s ease;
 }
 
-ul a:hover {
+header ul a:hover {
     background-color: var(--blue1);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     text-decoration: underline;
@@ -79,4 +82,18 @@ ul a:hover {
 
 .search:focus {
     background-color: #daebf3;
+}
+footer{
+    background-color:#0c6a92;
+    color: white;
+}
+footer li{
+    padding-top:0.6em;
+}
+footer h2{
+    padding-top: 15px;
+}
+footer ul, footer h2:nth-child(1){
+   position: relative;
+   left:4em;
 }
