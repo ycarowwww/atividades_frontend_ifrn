@@ -1,14 +1,32 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap'); /* Fonte do Logotipo importada do Google Fonts */
 
-:root {
-    --white1: #cecece;
+:root { /* Variáveis */
+    --white1: #FFFFFF;
+    --white2: #E4E4E4;
     --blue1: #0A2833;
     --blue2: #29ABE2;
+    --blue3: #051E27;
+    --blue4: #7ADCFF90;
+    --font-main: Arial, Helvetica, sans-serif;
+    --font-red-har: "Red Hat Display", sans-serif;
+}
+
+.material-symbols-outlined { /* Coisas do Google Fonts */
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-main);
+}
+
+h1, h2, h3, h4, h5, h6, p, button, a, q, table, div, span, header, main, footer, article, aside {
+    margin: 0;
 }
 
 html {
@@ -21,51 +39,289 @@ body {
 }
 
 header {
-    background-image: url('../images/shipcargo.jpg');
-    background-size: cover;
-    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-block: 3px;
+    color: var(--white1);
+    background-color: transparent;
+    z-index: 2;
 }
 
-.title-header {
+header *, nav, nav ul, nav ul li, nav ul li a { /* Caso mudar o "color" do header, todos os outros elementos também mudarão de cor */
+    color: inherit;
+}
+
+header > a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-family: var(--font-red-har);
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+header > a:hover {
+    color: var(--blue1);
+}
+
+header > a img {
+    filter: invert(100%);
+    width: 100px;
+    transition: filter .2s ease;
+}
+
+header > a:hover img {
+    filter: invert(12%) sepia(14%) saturate(2496%) hue-rotate(150deg) brightness(92%) contrast(95%);
+}
+
+header > a h1 {
+    font-size: 1.6rem;
+    font-family: inherit;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    font-weight: bold;
+    padding-block: 2px 1px;
+    border-bottom: 1px solid transparent; /* Uma "borda" vai servir como um "underline" */
+    transition: border-bottom-color .2s ease;
+}
+
+header nav ul li a:hover {
+    border-bottom-color: inherit;
+}
+
+header .button-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+header .button-icons a {
+    display: inline-block;
+    font-size: inherit;
+    text-decoration: none;
+    transition: background-color .2s ease;
+}
+
+header .button-icons a:not(:last-child) { /* O último não vai ter um "quadrado branco" atrás dele quando for :hover */
+    padding: 2px 3px 0px 3px;
+    border-radius: 3px;
+}
+
+header .button-icons a:not(:last-child):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header .button-icons a:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    font-weight: bold;
+    border-left: 3px solid gray;
+    padding-left: 10px;
+}
+
+header .button-icons a:last-child:hover span:first-child {
+    text-decoration: underline;
+}
+
+.main-page-header {
+    width: 100%;
+    height: 650px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.title-header img{
-    width: 100px;
+.main-page-header img { /* A Imagem de fundo vai usar um "position: absolute;" pro fundo dessa div inteira */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%); /* Deixar ela mais "escura" */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Evitar que fique por cima dos itens */
 }
 
-header div:last-child h1 {
-    padding-block: 300px;
+.main-page-header .main-text {
+    color: var(--white1);
+    font-size: 1.1rem;
+    max-width: 400px;
 }
+
+.main-page-header .main-text h1 {
+    font-size: 2.2rem;
+}
+
+.main-page-header .main-text button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    background-color: var(--white1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    transition: background-color .2s ease, box-shadow .2s ease;
+    cursor: pointer;
+}
+
+.main-page-header .main-text button:hover {
+    background-color: var(--white2);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.main-page-header .options {
+    padding: 20px 25px;
+    border-radius: 8px;
+    background-color: var(--white1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.main-page-header .options input[type="radio"] {
+    display: none;
+}
+
+.main-page-header .options .labels-windows {
+    margin-bottom: 35px;
+}
+
+.main-page-header .options .labels-windows label {
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+    padding-bottom: 4px;
+    transition: border-bottom-color .2s ease;
+    cursor: pointer;
+}
+
+.main-page-header .options .labels-windows label ~ label {
+    margin-left: 25px;
+}
+
+.main-page-header .options .labels-windows input[type="radio"]:checked + label {
+    border-bottom-color: var(--blue1);
+}
+
+.main-page-header .options .tracking-options .tracking-id-input {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    transition: border-bottom-color .2s ease;
+}
+
+.main-page-header .options .tracking-options .tracking-id-input:hover {
+    border-bottom-color: black;
+}
+
+.main-page-header .options .tracking-options .tracking-id-input:has(input:focus) {
+    border-bottom-color: var(--blue1);
+    box-shadow: 0 3px 0 var(--blue4); /* Gerar uma "segunda borda" embaixo */
+}
+
+.main-page-header .options .tracking-options .tracking-id-input span {
+    color: gray;
+}
+
+.main-page-header .options .tracking-options .tracking-id-input input {
+    border: 0;
+    outline: 0;
+    font-size: .8em;
+    width: 100%;
+}
+
+.main-page-header .options .tracking-options button {
+    color: var(--white1);
+    background-color: var(--blue1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: background-color .2s ease, box-shadow .2s ease;
+    cursor: pointer;
+}
+
+.main-page-header .options .tracking-options button:hover {
+    background-color: var(--blue3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-page-header .slideshow-labels {
+    position: absolute;
+    bottom: 10px;
+}
+
+.main-page-header .slideshow-labels input[type="radio"] {
+    display: none;
+}
+
+.main-page-header .slideshow-labels label {
+    display: inline-block;
+    border: 4px solid var(--white1);
+    border-radius: 5px;
+    padding: 8px 22px;
+    transition: background-color .2s ease;
+    cursor: pointer;
+}
+
+.main-page-header .slideshow-labels label ~ label {
+    margin-left: 8px;
+}
+
+.main-page-header .slideshow-labels input:checked + label {
+    background-color: var(--white1);
+}
+
+/* Atualizar Depois */
+
+
+
+
+
+
+
+
+
+
+
+
+p { /* Coisas dos paragrafos temporários */
+    max-width: 60dvw;
+    margin: auto;
+    padding-block: 10px;
+}
+
+
+
+
+
+
+
 
 ul a, ul {
     list-style-type: none;
     text-decoration: none;
     color: white;
-}
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-header ul a {
-    color: white;
-    display: inline-block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: background-color .5s ease, box-shadow .5s ease;
-}
-
-header ul a:hover {
-    background-color: var(--blue1);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    text-decoration: underline;
 }
 
 .search {
