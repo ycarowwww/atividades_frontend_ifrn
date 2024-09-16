@@ -13,6 +13,8 @@
     </head>
     <body>
         <header>
+            <div id="background-header"></div>
+            
             <a href="../pages/main.html">
                 <img src="../images/logotipo_seilhav_sem_cor.svg" alt="Logotipo da Seilhav">
                 <h1>Seilhav</h1>
@@ -60,7 +62,7 @@
                 </div>
 
                 <div class="tracking-options">
-                    <div class="tracking-id-input">
+                    <div class="option-input">
                         <span class="material-symbols-outlined">location_on</span>
                         <input type="text" name="tracking-id" id="tracking-id" placeholder="Insira um ID para Rastrear o Contâiner">
                     </div>
@@ -69,11 +71,26 @@
                 </div>
 
                 <div class="schedules-options">
-                    <!-- Finalizar Depois -->
+                    <div class="option-input">
+                        <span class="material-symbols-outlined">home_pin</span>
+                        <input type="text" name="location-origin-id" id="location-origin-id" placeholder="Origem">
+                    </div>
+
+                    <div class="option-input">
+                        <span class="material-symbols-outlined">distance</span>
+                        <input type="text" name="location-destination-id" id="location-destination-id" placeholder="Destino">
+                    </div>
+                    
+                    <button>Pesquisar</button>
                 </div>
 
                 <div class="contact-options">
-                    <!-- Finalizar Depois -->
+                    <div class="option-input">
+                        <span class="material-symbols-outlined">apartment</span>
+                        <input type="text" name="local-contact-id" id="local-contact-id" placeholder="Digite o nome do País/Região">
+                    </div>
+                    
+                    <button>Encontrar</button>
                 </div>
             </div>
 
