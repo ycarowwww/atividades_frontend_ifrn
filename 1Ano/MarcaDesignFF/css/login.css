@@ -1,48 +1,71 @@
 
-
-
 form{
     background-color:transparent ;
     width: 22em;
     height: 25em;
-    margin: auto;
-    padding-left: 1.5em;
-    border: 1px black solid;
+    position: relative;
+    left: 38.5em;
+    top: 7em;
     border-radius: 2px;
-    margin-top: 10em;
 }
 form input{
     display: block;
-    margin-top: 5em;
+    margin-top: 2em;
+    border-bottom: 1px gray solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     height: 3em;
     width: 23em;
 }
+form input[type='password']{
+background: url(../images/lock_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png) no-repeat scroll 7px 7px;
+background-size: 20px;
+padding-left: 35px;
+}
+form input[type='text']{
+    background: url(../images/account_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png) no-repeat scroll 7px 7px;
+    background-size: 20px;
+    padding-left: 35px;
+}
+form input:focus{
+    outline: transparent;
+    border-bottom: 1px black solid;
+}
+form input:hover{
+    border-bottom: 1px black solid;
+}
 h1{
-padding-left: 1.3em;
+text-align: left;
+font-size: 2.5em;
 }
 form button{
-    background-color: #0c6a92;
+    background-color: var(--blue1);
     height: 3em;
-    width: 20em;
+    width: 5em;
     margin: auto;
-    margin-left: 1.3em;
-    margin-top: 1em;
+    border-radius: 5px;
+    margin-top: 3em;
+    font-weight: bold;
     color: aliceblue;
-    transition: border-radius 0.2s ease-in;
+    animation: none;
+    border-style: none;
+    transition: background-color 0.2s ease-in;
 }
 form button:hover{
-    border-radius: 10px;
-    border: 1px solid aquamarine;
+    background-color: #3D62A7;
 }
 main div{
     width: 36em;
     height: 11em;
-    margin: auto;
+    position: relative;
+    left: 38.5em;
     border: 0.01mm lightgray solid;
-    padding-left: 15px;
+    padding-left: 20px;
     border-radius: 7px;
-    margin-top: 5em;
-    transition: box-shadow 0.5 ease-in;
+    margin-top: 2em;
+    padding-top: 2em;
+    transition: box-shadow 0.3s ease-in;
 }
 main div button{
     background-color:transparent ;
@@ -51,6 +74,8 @@ main div button{
     border-radius: 5px;
     height: 3em;
     width: 10em;
+    position: relative;
+    top: 2em;
     transition: background-color 1.2s ease-in;
 }
 main{
@@ -60,5 +85,16 @@ main div button:hover{
     background-color: lightgray;
 }
 main div:hover{
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+form p{
+    position: relative;
+    top: 1.5em;
+}
+form p a{
+    text-decoration: none;
+    color: #187abb;
+}
+form p a:hover{
+    text-decoration: underline;
 }
