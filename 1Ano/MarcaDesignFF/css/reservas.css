@@ -1,0 +1,43 @@
+main{
+    height: 50em;
+}
+form{
+    position: relative;
+    top: 10em;
+    height: 30em;
+    left: 20em;
+    border-left: 1px solid black;
+    padding-left: 15px;
+}
+label{
+    display: block;
+    margin-top: 3em;
+}
+select{
+    background-color: var(--blue1);
+    color: white;
+    height: 3em;
+    border-radius: 7px;
+    width: 24em;
+}
+button{
+    background-color:transparent ;
+    color: black;
+    border: 0.01mm lightgray solid;
+    border-radius: 5px;
+    height: 3em;
+    width: 10em;
+    position: absolute;
+    top: 30em;
+    transition: background-color 0.7s ease-in;
+    left: 1em;
+}
+button:hover{
+    background-color: lightgray;
+}
+main h2{
+    position: absolute;
+    top: 3.5em;
+    font-size: 2.5em;
+    left: 7em;
+}

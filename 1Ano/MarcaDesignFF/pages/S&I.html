@@ -6,12 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Serviços e Informações</title>
         <link rel="stylesheet" href="../css/S&I.css">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!-- Ícones do Google Fonts -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--  Ícones do Bootstrap -->
     </head>
     <body>
         <header>
+            <div id="background-header"></div>
+            
             <a href="../pages/main.html">
                 <img src="../images/logotipo_seilhav_sem_cor.svg" alt="Logotipo da Seilhav">
                 <h1>Seilhav</h1>
@@ -21,15 +24,15 @@
                 <ul>
                     <li><a href="../pages/S&I.html">Serviços e Informações</a></li>
                     <li>
-                        <a href="#"><span>Reservar</span> <span class="material-symbols-outlined">arrow_drop_down</span></a>
+                        <a href="../pages/reservas.html"><span>Reservar</span> <span class="material-symbols-outlined">arrow_drop_down</span></a>
 
                         <div class="dropdown-booking">
-                            <a href="#" class="booking-options">
+                            <a href="../pages/reservas.html" class="booking-options">
                                 <span><span class="material-symbols-outlined">directions_boat</span> <span class="dropdown-booking-content">Transporte Oceânico (Containers)</span></span>
                                 <span>Transporte por Contâneirs Completo</span>
                             </a>
 
-                            <a href="#" class="booking-options">
+                            <a href="../pages/reservas.html" class="booking-options">
                                 <span><span class="material-symbols-outlined">box</span> <span class="dropdown-booking-content">Carga-menor-que-um-Contâiner (LCL)</span></span>
                                 <span>Transporte de Pequenas Cargas</span>
                             </a>
@@ -63,48 +66,63 @@
             </ul>
         </header>
 
+
         <main>
-            <h2>Serviços</h2>
-            <p>Confira Abaixo alguns serviços que a Seilhav pode realizar</p>
-            <article>
-                    <h3>Transporte de Cargas</h3>
-                    <p>O Transporte pode ser realizada de forma completa, realizada para um único cliente, ou por consolidação de cargas menores, que é para diferentes clientes. </p>
+            <h2 id="service">Serviços</h2>
+            <p id="lide">Confira Abaixo alguns serviços que a Seilhav pode realizar</p>
+            <article id="grid-service">
+                <div>
+                        <h3>Transporte de Cargas</h3>
+                    <p>Um serviço de transporte de cargas é uma operação que envolve o movimentação de mercadorias de um ponto a outro, utilizando diferentes modos de transporte, como rodoviário, ferroviário, aéreo e marítimo. Esse serviço é fundamental para empresas e indústrias, pois garante que produtos cheguem a seus destinos de forma segura e eficiente.Portanto, é um dos serviços mais famosos e utilizados nos dias de hoje.</p>
+                </div>
+                <div>
+                        <h3>Frete Internacional</h3>
+                    <p>Refere-se ao transporte de mercadorias entre países, envolvendo diversas etapas logísticas e regulamentações específicas. Este processo inclui a escolha do modo de transporte (aéreo, marítimo, rodoviário ou ferroviário), o gerenciamento da documentação necessária (como conhecimento de embarque, faturas comerciais e certificados de origem), o cumprimento das normas aduaneiras de importação e exportação, e o pagamento de impostos e tarifas.</p>
+                </div>
+                <div>
+                        <h3>Despacho Aduaneiro</h3>
+                    <p>É como um atalho que os órgãos públicos usam para resolver rapidamente situações urgentes. Imagine que alguém precisa de um atendimento rápido, como uma autorização ou um benefício que não pode esperar. Em vez de passar por todos os passos normais e demorados, o despacho ardueiro permite que a resposta seja dada de forma mais rápida e eficiente.  </p>
+                </div>
+                <div>
+                        <h3>Armazenagem e Logística</h3>
+                    <p>Armazenagem é o processo de guardar mercadorias em locais específicos (como armazéns) até que sejam necessárias para distribuição ou venda. Isso inclui o controle de inventário e a organização de produtos. E Logística é o planejamento e a execução do transporte e armazenamento de mercadorias, abrangendo todas as etapas desde a produção até a entrega ao consumidor final. Envolve a gestão de transporte, distribuição e toda a cadeia de suprimentos.</p>
+                </div>
+                <div>
+                        <h3>Gestão de documentação</h3>
+                        <p>Um Conjunto de práticas, procedimentos e ferramentas que visam organizar, controlar, preservar e facilitar o acesso a documentos e informações dentro de uma organização. Isso abrange desde a criação, classificação e armazenamento até a distribuição, revisão e eliminação de documentos, garantindo a conformidade legal e a segurança da informação, além de otimizar processos operacionais e de tomada de decisão.</p>
+                </div>
+                <div>
+                        <h3>Serviços de seguro de carga</h3>
+                    <p>Refere-se a apólices de seguro que protegem mercadorias durante o transporte contra riscos como perda, dano ou roubo. Esses serviços são essenciais para empresas que movimentam produtos, oferecendo cobertura que varia de acordo com o tipo de carga, meio de transporte e condições específicas.</p>
+                </div>
             </article>
-            <article>
-                    <h3>Frete Internacional</h3>
-                    <p>Transporte de mercadorias entre diferentes países, garantindo que as normas alfandegárias e regulamentos internacionais sejam cumpridos</p>
+            <hr>
+        <article id="info-group">
+        <h2 id="Center-Information">Centro de Informações</h2>
+        <p id="lide-information">Bem-vindo ao Centro de Informações da <strong>Seilhav</strong>, sua parceira confiável em transportes marítimos globais. Nossa missão é conectar o mundo por meio de soluções eficientes e sustentáveis, garantindo que suas cargas cheguem ao destino com segurança e pontualidade.</p>
+        <h3 class="subtitle-info">Sobre a Seilhav</h3>
+        <p>A Seilhav é uma empresa de transporte marítimo com vasta experiência no setor global. Nossa missão é fornecer serviços logísticos de qualidade superior, com uma frota diversificada que atende aos mais exigentes padrões internacionais. Com operações em várias rotas estratégicas ao redor do mundo, somos especialistas em transporte de mercadorias com rapidez, segurança e inovação.</p>
+        <h3 class="subtitle-info">Nossa História</h3> 
+        <p>Fundada em 2015, a Seilhav cresceu de uma pequena operação local para uma rede global de transportes marítimos. Ao longo dos anos, estabelecemos parcerias sólidas com importantes portos e terminais ao redor do mundo, permitindo uma cadeia logística confiável e eficiente.</p>
+        <h3 class="subtitle-info">Nossa Frota</h3>
+        <ul>
+            <li><strong>Navios de Containers</strong>: Capazes de transportar uma ampla gama de mercadorias com rapidez e eficiência.</li>
+            <li><strong>Navios Graneleiros</strong>: Projetados para transporte a granel de produtos como minérios, grãos e combustíveis.</li>
+            <li><strong>Navios Tanque</strong>: Especializados em produtos líquidos e químicos, garantindo segurança em todas as etapas do processo.</li>
+        </ul> 
+        <h3 class="subtitle-info">Informações de Transporte</h3>
+        <p>Em nosso centro de informações, você encontra todos os detalhes operacionais necessários para a gestão de suas remessas e cargas.</p>
+        <ol>
+            <li><strong>Status de Embarcações</strong>: Acompanhe o trajeto de seus embarques em tempo real com nossa plataforma de rastreamento. Basta inserir o número de sua carga para obter informações detalhadas.</li>
+            <li><strong>Rotas e Tarifas</strong>: Informações sobre as rotas disponíveis, tarifas de transporte e prazos estimados de entrega. Nossa equipe está sempre disponível para esclarecer dúvidas e ajudar na escolha da melhor rota para sua carga. </li> 
+            <li><strong>Segurança e Conformidade</strong>: : A Seilhav segue rigorosos padrões internacionais de segurança e conformidade, assegurando que todas as operações estejam em linha com as leis marítimas e ambientais.</li>
+            <li><strong>Documentação e Procedimentos Aduaneiros</strong>: Facilitamos o processo de documentação para exportação e importação de mercadorias, garantindo que tudo esteja em conformidade com os requisitos alfandegários dos países de destino.</li>
+            <li><strong>Condições Climáticas e de Maré</strong>: Nossa equipe monitora constantemente as condições marítimas para fornecer previsões atualizadas, permitindo um planejamento mais eficiente de suas operações logísticas.</li>
+        </ol>
+        <h3 class="subtitle-info">Sustentabilidade</h3>
+        <p>A Seilhav está comprometida com a preservação do meio ambiente. Temos uma política de sustentabilidade que visa reduzir a emissão de gases de efeito estufa, otimizar o consumo de combustível e implementar tecnologias verdes em nossa frota.</p>
             </article>
-            <article>
-                    <h3>Despacho Aduaneiro</h3>
-                    <p>Gestão dos processos de importação e exportação, incluindo documentação e pagamento de impostos alfandegárias</p>
-            </article>
-            <article>
-                    <h3>Armazenagem e Logística</h3>
-                    <p>Serviços de armazenamento de mercadorias em armazéns, tanto no ponto de origem quanto no de destino, antes ou após o transporte, juntamente com a logística.</p>
-            </article>
-            <article>
-                    <h3>Gestão de documentação</h3>
-                    <p>Tratamento de documentos importantes, como contratos de frete, conhecimentos de embarque e desembarque e certificado de seguro.</p>
-            </article>
-            <article>
-                    <h3>Serviços de seguro de carga</h3>
-                    <p>Oferecimento de Seguros para proteger e evitar perdas e roubos durante o transporte.</p>
-            </article>
-        <h2>Informações</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </main>
+    </main>
 
         <footer>
             <div class="footer-links">
@@ -174,6 +192,8 @@
                 </div>
             </section>
         </footer>
+        <script src="../js/header.js"></script>
+        <script src="../js/scroll.js"></script>
     </body>
 
 
