@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap'); /* Fonte do Logotipo importada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
-:root { /* Variáveis */
+:root {
     --white1: #FFFFFF;
     --white2: #E4E4E4;
     --black1: #000000;
@@ -14,7 +14,7 @@
     --font-red-hat: "Red Hat Display", sans-serif;
 }
 
-.material-symbols-outlined { /* Coisas do Google Fonts */
+.material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -53,7 +53,7 @@ header {
     z-index: 2;
 }
 
-header:not(:has(#background-header)) { /* Todos os outros headers das outras páginas terão que serem retirados essa div #background-header, para que assim não fiquem com a animação do fundo da tela e acabem ficando meio bugados */
+header:not(:has(#background-header)) {
     color: var(--black1);
     background-color: var(--white1);
     border-bottom: 1px solid lightgray;
@@ -70,15 +70,15 @@ header #background-header {
     z-index: -1;
     top: 0;
     background-color: var(--white1);
-    transition: height .5s cubic-bezier(.47, .89, .55, .81), border-bottom .5s cubic-bezier(.47, .89, .55, .81); /* Animação de descida do fundo */
+    transition: height .5s cubic-bezier(.47, .89, .55, .81), border-bottom .5s cubic-bezier(.47, .89, .55, .81);
 }
 
 header.scrolled #background-header {
-    height: 66px; /* Altura do "header" */
+    height: 66px;
     border-bottom: 1px solid lightgray;
 }
 
-header *, nav, nav ul, nav ul li, nav ul li a, .icons-menu, .icons-menu li, .icons-menu li a { /* Caso mudar o "color" do header, todos os outros elementos também mudarão de cor */
+header *, nav, nav ul, nav ul li, nav ul li a, .icons-menu, .icons-menu li, .icons-menu li a {
     color: inherit;
     transition: color .2s cubic-bezier(.47, .89, .55, .81);
 }
@@ -129,7 +129,7 @@ header nav ul li a {
     display: inline-block;
     font-weight: bold;
     padding-block: 2px 1px;
-    border-bottom: 1px solid transparent; /* Uma "borda" vai servir como um "underline" */
+    border-bottom: 1px solid transparent; 
     transition: border-bottom-color .2s ease;
 }
 
@@ -151,7 +151,7 @@ header nav ul li .dropdown-booking {
     position: absolute;
     top: calc(100% + 5px);
     right: 0;
-    width: 335px; /* Definimento do tamanho EXTREMAMENTE ruim, mas to com preguiça de melhorá-lo */
+    width: 335px; 
     background-color: var(--white1);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     margin: 0;
@@ -200,7 +200,7 @@ header nav ul li .dropdown-booking .booking-options:hover .dropdown-booking-cont
 header nav ul li .dropdown-booking .booking-options > span:last-child {
     color: gray;
     font-size: .9rem;
-    text-indent: 30px; /* Forma EXTREMAMENTE ruim de adicionar espaçamento do texto debaixo */
+    text-indent: 30px;
     margin-top: 3px;
 }
 
@@ -225,7 +225,7 @@ header .icons-menu a {
     transition: background-color .2s ease;
 }
 
-header .icons-menu > li:not(:has(.dropdown-languages)) a { /* O último não vai ter um "quadrado branco" atrás dele quando for :hover */
+header .icons-menu > li:not(:has(.dropdown-languages)) a {
     padding: 2px 3px 0px 3px;
     border-radius: 3px;
 }
@@ -256,7 +256,7 @@ header .icons-menu  li:has(.dropdown-languages) a:hover span:first-child {
     text-decoration: underline;
 }
 
-header .icons-menu .dropdown-languages { /* Só Deus sabe como diabos essa coisa para o dropdown funciona */
+header .icons-menu .dropdown-languages {
     color: var(--black1);
     position: absolute;
     top: 100%;
@@ -306,15 +306,15 @@ header .icons-menu li:has(.dropdown-languages) a:hover ~ .dropdown-languages, he
     position: relative;
 }
 
-.main-page-header img { /* A Imagem de fundo vai usar um "position: absolute;" pro fundo dessa div inteira */
+.main-page-header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(60%); /* Deixar ela mais "escura" */
+    filter: brightness(60%);
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Evitar que fique por cima dos itens */
+    z-index: -1; 
 }
 
 .main-page-header .main-text {
@@ -380,11 +380,11 @@ header .icons-menu li:has(.dropdown-languages) a:hover ~ .dropdown-languages, he
 }
 
 .main-page-header .options div[class$="-options"] {
-    display: none; /* Esconder todos */
+    display: none;
 }
 
 .main-page-header .options .labels-windows:has(#label-window1:checked) ~ .tracking-options, .main-page-header .options .labels-windows:has(#label-window2:checked) ~ .schedules-options, .main-page-header .options .labels-windows:has(#label-window3:checked) ~ .contact-options {
-    display: block; /* Mostrar a parte do quadrado branco corresponder ao marcado */
+    display: block; 
 }
 
 .main-page-header .options .option-input {
@@ -402,7 +402,7 @@ header .icons-menu li:has(.dropdown-languages) a:hover ~ .dropdown-languages, he
 
 .main-page-header .options .option-input:has(input:focus) {
     border-bottom-color: var(--blue1);
-    box-shadow: 0 3px 0 var(--blue4); /* Gerar uma "segunda borda" embaixo */
+    box-shadow: 0 3px 0 var(--blue4);
 }
 
 .main-page-header .options .option-input span {
@@ -467,7 +467,7 @@ main section + section {
     border-top: 5px solid gray;
 }
 
-.wrapper-padding { /* Tag universal para as partes do site ficarem "alinhadas" e com a "mesma largura" */
+.wrapper-padding {
     width: min(100dvw, 1100px);
     padding-inline: 5px;
     margin-inline: auto;
@@ -513,7 +513,7 @@ section p {
 }
 
 .main-sectors-wrapper {
-    display: flex; /* Melhorar esse Flexbox depois */
+    display: flex;
     width: 100%;
     overflow-x: scroll;
     scroll-behavior: smooth;
@@ -526,7 +526,7 @@ section p {
 .list-sectors {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Melhorar essa grid depois */
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     flex: none;
 }
@@ -663,16 +663,16 @@ section p {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 1;
-    overflow: hidden; /* "apaga" a parte que "sai pra fora" da imagem */
+    overflow: hidden;
     transition: box-shadow .5s ease;
     cursor: pointer;
 }
 
-.list-news > article img { /* Gambiarra do cacete ;-; */
+.list-news > article img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute; /* Imagem ocupa todo o fundo do article usando position absolute */
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
@@ -684,7 +684,7 @@ section p {
 }
 
 .list-news > article:hover img {
-    scale: 1.2; /* Efeito de Zoom */
+    scale: 1.2;
 }
 
 .list-news > article p {
@@ -808,7 +808,6 @@ footer .footer-copyright .footer-text p {
     text-transform: uppercase;
 }
 
-/* Ver oq é isso dps */
 .search {
     background-color: white;
     font-size: 1.2rem;

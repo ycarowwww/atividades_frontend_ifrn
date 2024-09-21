@@ -3,7 +3,7 @@ function backgroundHeader() {
 
     headerElement.classList = "";
     
-    if (window.scrollY > 0) { // Verifica se estar "scrollado" um pouco pra baixo
+    if (window.scrollY > 0) {
         headerElement.classList.toggle("scrolled");
     }
 }
