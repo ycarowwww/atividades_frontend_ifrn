@@ -1,3 +1,4 @@
 Perguntas de HTML Sintaxe e Semântica
+- Funções de Tags a, p, hs, etc.
 
 Fazer uma pequena página com alguns requisitos em HTML e CSS
