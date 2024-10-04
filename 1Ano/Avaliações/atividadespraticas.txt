@@ -3,4 +3,4 @@ Atividades Práticas:
 - Tabela Planos
 - Site RAW
 - Site Telecomunicações
-- Pequenas páginas para treinar conteúdos das aulas
+- Pequenas páginas para treinar conteúdos das aulas (Como hs, p, a, header, main, footer, etc.)
