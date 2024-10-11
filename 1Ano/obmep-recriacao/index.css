@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+:root {
+    --blue1: #34C2E0;
+    --blue2: #0098D9;
+    --blue3: #124A49;
+    --yellow1: #fcc417;
+    --gray1: #D6D6D6;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, span, figure {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("images/background_menu.jpg");
+    background-color: var(--blue1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 290px;
+}
+
+header > nav {
+    background-color: var(--blue2);
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+header > nav > ul a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 10px;
+    transition: background-color .3s ease;
+}
+
+header > nav > ul a.button-yellow {
+    font-size: .9rem;
+    background-color: var(--yellow1);
+}
+
+header > nav > ul a:hover {
+    background-color: var(--blue3);
+}
+
+header > nav > ul a span {
+    font-size: .7rem;
+}
+
+header > nav > ul li:has(ul.dropdown-menu) {
+    position: relative;
+}
+
+header > nav > ul li:has(ul.dropdown-menu) > a:hover + ul.dropdown-menu, ul.dropdown-menu:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+ul.dropdown-menu {
+    position: absolute;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--blue2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s ease, visibility .2s ease;
+}
+
+ul.dropdown-menu :where(li, a) {
+    text-transform: none;
+    display: inline-block;
+    min-width: 100%;
+}
+
+main {
+    width: min(1400px, 100dvw);
+    margin-inline: auto;
+    padding: 20px;
+}
+
+main section + section {
+    margin-top: 20px;
+}
+
+main h2 {
+    background-color: var(--blue2);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main figure img {
+    width: 100%;
+}
+
+main figure + figure {
+    margin-top: 20px;
+}
+
+main ul.apoiadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+main ul li {
+    border: 3px solid var(--gray1);
+    transition: border-color .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main ul li:hover {
+    border-color: var(--blue2);
+}
+
+main ul li:nth-child(2) {
+    grid-column: span 2;
+}
+
+main ul img {
+    width: 250px;
+}
+
+footer {
+    background-color: var(--blue2);
+    padding-block: 10px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer p a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
