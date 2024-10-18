@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+main .images {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+main .images figure {
+    text-align: center;
+    padding: 15px;
+}
+
+main .images figure:nth-child(1) {
+    background-color: #0d9e9e;
+}
+
+main .images figure:nth-child(2) {
+    background-color: #086969;
+}
+
+main .images figure:nth-child(3) {
+    background-color: #074b4b;
+}
+
+main .images figure:nth-child(4) {
+    background-color: #032727;
+}
+
+main .images figure img {
+    width: 100%;
+    scale: .9;
+    cursor: pointer;
+    transition: scale .5s ease;
+}
+
+main .images figure:hover img {
+    scale: 1;
+}
+
+main .images figure figcaption {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+main a {
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+main a:hover {
+    text-decoration: underline;
+}

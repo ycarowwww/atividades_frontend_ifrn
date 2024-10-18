@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main a {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #0D289E;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow .5s ease, background-color .5s ease;
+}
+
+main a:hover {
+    text-decoration: underline;
+    background-color: #071B75;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
