@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+header, header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+header {
+    color: white;
+    background-color: #122b50;
+    padding: 10px;
+}
+
+h1 img {
+    height: 4rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: color .5s ease, border .5s ease;
+}
+
+header nav ul li a:hover {
+    color: #f55111;
+    border-color: #f55111;
+}
+
+header button {
+    color: white;
+    font-size: 1.3rem;
+    background-color: #2b59da;
+    padding: 6px 8px;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    transition: background-color .5s ease, box-shadow .5s ease;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #1640b3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+main {
+    width: min(700px, 100%);
+    margin-inline: auto;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+}
+
+main h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+main form {
+    margin-block: 10px;
+}
+
+main form fieldset {
+    border: 0;
+}
+
+main form fieldset * {
+    display: block;
+}
+
+main form fieldset :where(input, select, textarea) {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 8px;
+    outline: 0;
+    margin-block: 5px;
+    transition: background-color .5s ease;
+}
+
+main form fieldset :where(input, select, textarea):focus {
+    background-color: #d5dffa;
+}
+
+main form button {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: #2b59da;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 4px;
+    transition: background-color .5s ease;
+    cursor: pointer;
+}
+
+main form button:hover {
+    background-color: #1640b3;
+}
+
+main aside p {
+    text-indent: 1.5rem;
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    background-color: #122b50;
+    padding-block: 5px;
+    margin-top: 15px;
+}
