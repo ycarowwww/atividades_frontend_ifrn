@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXPOTEC - IFRN CNAT - Inscrição</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img src="images/logo.png" alt="Logotipo da EXPOTEC">
+            </figure>
+
+            <h1>EXPOTEC - IFRN CNAT</h1>
+
+            <button>Login</button>
+        </header>
+
+        <main>
+            <h2>Inscreva-se na EXPOTEC!</h2>
+
+            <form action="main.php">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="matriculation">Matrícula:</label>
+                <input type="number" name="matriculation" id="matriculation" required>
+
+                <label for="course">Curso:</label>
+                <select name="course" id="course" required>
+                    <option value="" selected disabled>Escolha um Curso</option>
+                    <option value="administration">Técnico em administração</option>
+                    <option value="computing">Técnico em Informática para Internet</option>
+                    <option value="maintenance">Técnico em Manutenção e Suporte de Computadores</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>O evento será realizado nos dias 29, 30 e 31 de janeiro de 2025</p>
+        </footer>
+    </body>
+</html>
