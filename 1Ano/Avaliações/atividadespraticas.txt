@@ -4,3 +4,5 @@ Atividades Práticas:
 - Site RAW
 - Site Telecomunicações
 - Pequenas páginas para treinar conteúdos das aulas (Como hs, p, a, header, main, footer, etc.)
+- Site com Layouts
+- Site Formulários da Expotec
