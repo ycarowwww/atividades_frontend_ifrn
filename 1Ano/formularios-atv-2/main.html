@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aprendium - Cadastro de Atletas</title> <!-- Aprendium: Escola que eu inventei para esse trabalho. O logotipo eu também criei no Illustrator. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Link da Fonte Poppins -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Link da Fonte Poppins -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <!-- Link da Fonte Poppins -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- Link do Google Fonts para os Ícones -->
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon da Página -->
+    </head>
+    <body>
+        <header>
+            <h1 aria-label="Logotipo da Escola Aprendium"> <!-- "Aria-tag" para os leitores de tela saberem o que ler quando verem esse "h1" "vazio" (não tem como eles lerem uma imagem). -->
+                <img src="images/school-logo.svg" alt="Logotipo da Escola Aprendium">
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Professores</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Contate-nos</a></li>
+                </ul>
+            </nav>
+
+            <button>Matricule-se</button>
+        </header>
+
+        <main>
+            <figure>
+                <img src="images/background-forms.svg" alt="Desenho de uma Pessoa praticando Basquete">
+            </figure>
+            
+            <section>
+                <h2>Cadastre-se, Atleta!</h2>
+
+                <p>Venha ajudar a sua turma!</p>
+                
+                <form action="#">
+                    <label>
+                        <span class="material-symbols-outlined">person</span>
+                        
+                        <input type="text" name="name" placeholder="Nome:" required>
+                    </label>
+
+                    <label>
+                        <span class="material-symbols-outlined">badge</span>
+                        
+                        <input type="number" name="age" placeholder="Idade:" required>
+                    </label>
+
+                    <label>
+                        <span class="material-symbols-outlined">sports_soccer</span>
+
+                        <select name="modality" required>
+                            <option value="" selected disabled>Escolha uma Modalidade</option>
+                            <option value="volleyball">Vôlei</option>
+                            <option value="basketball">Basquete</option>
+                            <option value="soccer">Futebol</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span class="material-symbols-outlined">school</span>
+                        
+                        <input type="text" name="class" placeholder="Turma:" required>
+                    </label>
+
+                    <label>
+                        <span class="material-symbols-outlined">wc</span>
+
+                        <select name="gender" required>
+                            <option value="" selected disabled>Escolha seu Gênero</option>
+                            <option value="male">Masculino</option>
+                            <option value="female">Feminino</option>
+                            <option value="unspecified">Prefiro Não Dizer</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </label>
+
+                    <button type="submit">Cadastrar-se</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Criado por <strong>João Rafael</strong> - INFOWEB 2024.1</p>
+        </footer>
+    </body>
+</html>

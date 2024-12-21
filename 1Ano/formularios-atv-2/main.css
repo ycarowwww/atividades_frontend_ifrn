@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+.material-symbols-outlined { /* CSS para os Ícones do Google Fonts */
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+:root {
+    --font: "Poppins", sans-serif;
+    --background-yellow: #FFFFF2;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-yellow);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.2rem 5rem;
+    background-color: white;
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, .5);
+}
+
+header h1 {
+    line-height: 0; /* O "h1" continua tentando gerar texto mesmo sem ter nenhum, então ele cria um espaço "vazio" embaixo da imagem. Essa opção desativa isso. */
+}
+
+header h1 img {
+    height: 3rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative; /* Necessário para posicionar os "::before". */
+    transition: color .3s ease;
+}
+
+header nav ul li a:hover {
+    color: #0651a7;
+}
+
+header nav ul li a::before { /* "Linha" que fica embaixo dos botões do Menu. Feitos usando uma pequena "Gambiarra" com os "::before"" do CSS. */
+    content: "";
+    position: absolute; /* Posiciona ele embaixo e no meio dos botões. */
+    top: 100%;
+    left: 50%;
+    width: 0%;
+    height: .3rem;
+    border-radius: .15rem;
+    background-color: black;
+    transition: width .3s ease, left .3s ease, background-color .3s ease;
+}
+
+header nav ul li a:hover::before { /* Quando ocorrer um ":hover", o "::before" aumentará de tamanho para 100% (total do botão) e sairá da posição "left: 50%" (deixa ele no meio do botão) e irá para 0% (começo), dando um efeito de que ele surgiu do meio do botão. */
+    left: 0%; /* Muda a posição dele para o começo ao mesmo tempo que expande, dando uma impressão que ele surgiu do "meio" do botão. */
+    width: 100%;
+    background-color: #0651a7;
+}
+
+header button {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem .6rem;
+    border: 0;
+    outline: 0;
+    background-color: #043e81;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, .5);
+    transition: background-color .3s ease, box-shadow .3s ease;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #0651a7;
+    box-shadow: 0 0 .3rem .1rem rgba(0, 0, 0, .5);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, .5);
+}
+
+main figure img {
+    height: 20rem;
+}
+
+main section p {
+    color: #292929;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+main form label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    padding-bottom: .2rem;
+    border-bottom: .2rem solid #d6d6d6;
+    margin-bottom: .5rem;
+    transition: border-bottom-color .3s ease;
+}
+
+main form label:has(:where(input, select):focus) {
+    border-bottom-color: #0651a7;
+}
+
+main form label :where(input, select) {
+    font-size: .9rem;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+main form label input::-webkit-outer-spin-button, main form label input::-webkit-inner-spin-button { /* Tirar as "setas" do "input:number" */
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+main form label input[type=number] { /* Tirar as "setas" do "input:number" */
+    appearance: textfield;
+}
+
+main form button {
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    padding-block: .4rem;
+    border: 0;
+    border-radius: .3rem;
+    outline: 0;
+    margin-top: .5rem;
+    background-color: #043e81;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, .5);
+    transition: background-color .3s ease, box-shadow .3s ease;
+    cursor: pointer;
+}
+
+main form button:hover {
+    background-color: #0651a7;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, .5);
+}
+
+footer {
+    color: white;
+    padding-block: .3rem;
+    background-color: #043e81;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-height: 35rem) {
+    main {
+        margin-block: 2rem;
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    header {
+        justify-content: space-around;
+        padding-inline: 0;
+    }
+
+    header nav ul {
+        gap: 1rem;
+    }
+    
+    header button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 47rem) {
+    main {
+        display: block;
+        width: min(25rem, 100%); /* Tamanho Máximo para o "main" */
+    }
+    
+    main figure {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 42rem) {
+    header, header nav ul {
+        gap: .3rem;
+        flex-direction: column;
+    }
+}
