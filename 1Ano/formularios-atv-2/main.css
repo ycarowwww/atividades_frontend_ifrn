@@ -191,10 +191,10 @@ footer {
 footer p {
     text-align: center;
 }
-
-@media screen and (max-height: 35rem) {
+/* Um Pouco de Responsividade */
+@media screen and (max-height: 35rem), screen and (max-width: 42rem) {
     main {
-        margin-block: 2rem;
+        margin-block: 2rem; /* Caso a altura for muito baixa isso deixará o "main" com uma margin já predefinida em vez de ficar "colidindo" com as outras divs semânticas. */
     }
 }
 
