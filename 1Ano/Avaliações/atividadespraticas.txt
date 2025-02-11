@@ -6,4 +6,5 @@ Atividades Práticas:
 - Pequenas páginas para treinar conteúdos das aulas (Como hs, p, a, header, main, footer, etc.)
 - Site com Layouts
 - Site Formulários da Expotec
+- Site Formulários de Esportes (input:submit em vez de button:submit)
 - Trabalho Final
