@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+    background-color: #707070;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "a b c"
+        "a b d"
+        "e e e";
+    gap: .25rem;
+    width: 70dvw;
+    height: 80dvh;
+}
+
+section {
+    border: 2px solid #303030;
+    border-radius: .25rem;
+    background-color: bisque;
+}
+
+.sect-1 {
+    grid-area: a;
+    background-color: hsl(0, 100%, 85%);
+}
+
+.sect-2 {
+    grid-area: b;
+    background-color: hsl(219, 100%, 85%);
+}
+
+.sect-3 {
+    grid-area: c;
+    background-color: hsl(127, 100%, 85%);
+}
+
+.sect-4 {
+    grid-area: d;
+    background-color: hsl(189, 100%, 85%);
+}
+
+.sect-5 {
+    grid-area: e;
+    background-color: hsl(60, 100%, 85%);
+}

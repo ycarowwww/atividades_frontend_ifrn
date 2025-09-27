@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 2rem;
+
+    &.not-1 {
+        order: 3; /* Para definir a ordem, todos os filhos precissam ter ordem definida. */
+    }
+
+    &.not-2 {
+        order: 4;
+    }
+
+    &.not-3 {
+        order: 1;
+    }
+
+    &.not-4 {
+        order: 2;
+    }
+
+    &.not-5 {
+        order: 5;
+    }
+}

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    border: 5px solid black;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+section + section {
+    margin-top: 2rem;
+}
+
+section > h2 {
+    text-align: center;
+    flex-basis: 100%;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    background-color: cornflowerblue;
+}
+
+section > div { /* Dentro do contaneir */
+    background-color: cadetblue;
+    padding: 1%;
+    flex-basis: calc(98 / 3 / 100 * 100%); /* 98 / 3 */
+}
+
+.sect2 > div {
+    flex-basis: calc(99 / 2 / 100 * 100%); /* 99 / 2 */
+}
+
+.sect3 > div {
+    flex-basis: calc(97 / 4 / 100 * 100%); /* 97 / 4 */
+}

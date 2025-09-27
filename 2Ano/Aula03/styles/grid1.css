@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 70rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* A quantidade de itens é igual a quantidade de itens */
+    grid-template-rows: 10rem 10rem;
+    grid-template-areas: 
+        "c b d"
+        "a a d"; /* Definição de nomes das variáveis seguem o mesmo padrão de variáveis da programação em si. Não pode na diagonal e um espaço é por "." */
+    gap: 1rem;
+}
+
+section {
+    border: 1px solid black;
+    padding: 1rem;
+    overflow: auto;
+}
+
+section.noticias {
+    grid-area: a; /* pra definir área a gente usa a "area". */
+}
+
+section.comemoracao {
+    grid-area: b;
+}
+
+section.organizadores {
+    grid-area: c;
+}
+
+section.corrida {
+    grid-area: d;
+}

@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header, footer, section {
+    padding: 2rem;
+    background-color: lightcyan;
+    font-size: .7rem;
+}
+
+header {
+    position: fixed; /* Fica display: inline-block, e fixa fixo no eixo Y, pois ativa o eixo Z. */
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .5);
+}
+
+header, footer {
+    background-color: lightskyblue;
+}
+
+main {
+    margin-block: 10rem 2rem;
+}
+
+section + section {
+    margin-top: 3rem;
+}
+
+h1, h2, footer p {
+    text-align: center;
+}
+
+#range-header {
+    width: 100%;
+}
+
+#modal {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .5);
+    z-index: 4;
+}
+
+#modal h2 {
+    position: relative;
+    top: 10rem;
+    color: black;
+    background-color: #e0e0e0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: 1rem;
+}
+
+#modal img {
+    width: 100%;
+    height: 30rem;
+    margin-top: 1rem;
+}
+
+#modal button {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    background-color: #c50000;
+    padding-block: 1rem;
+    width: 100%;
+    transition: background-color .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #a30000;
+    }
+}
+
+#esmaecer {
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100dvh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+#sticky-div {
+    position: sticky;
+    top: 10rem;
+    left: 0;
+    background-color: turquoise;
+    width: 20rem;
+    padding-block: 1rem;
+}
+
+.random-thing-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    background-color: darkorange;
+    animation: movingThing 4s linear infinite;
+    z-index: 1;
+}
+
+@keyframes movingThing {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: calc(100% - 100px);
+    }
+
+    50% {
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+
+    75% {
+        top: calc(100% - 100px);
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
