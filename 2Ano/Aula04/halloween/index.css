@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+section {
+    border: 1px solid black;
+    padding: 1rem;
+    flex-basis: calc((100% - 3 * 1rem) / 4); /* Fórmula do basis para 4 colunas */
+}
+
+@media (max-width: 1440px) { /* @media usa uma condição para aplicar um CSS específico */
+    body {
+        background-color: aquamarine;
+    }
+
+    section {
+        flex-basis: calc((100% - 1rem) / 2); /* Fórmula do basis para 2 colunas */
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-color: cadetblue;
+    }
+
+    section {
+        flex-basis: 100%; /* Fórmula do basis para 1 coluna */
+    }
+}

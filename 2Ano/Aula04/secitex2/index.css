@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap");
+
+:root { /* Variavéis */
+    --index-tx: blue;
+    --index-bg: cadetblue;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--index-bg);
+    font-family: "Playwrite DE SAS", cursive;
+}
+
+/* Vemos um monte de seletores ai que é só passar o mouse em cima e a gnt sabe o q faz. */
+
+section {
+    position: relative;
+    padding: 10px;
+    background-color: #EDEDED;
+    animation: mostrar 1s ease-out;
+}
+
+section h2 {
+    margin-bottom: 3rem;
+}
+
+section h2::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 3.5rem;
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: black;
+    animation: andar 5s linear infinite;
+}
+
+@keyframes mostrar { /* Criação de uma animação. */
+    0% { /* Estudar sobre Microinterações. */
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    60% {
+        transform: translateX(-30px);
+    }
+    70% {
+        transform: translateX(20px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    90% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes andar {
+    0% {
+        left: 1rem;
+    }
+    50% {
+        left: calc(100% - 3rem);
+    }
+    100% {
+        left: 1rem;
+    }
+}
