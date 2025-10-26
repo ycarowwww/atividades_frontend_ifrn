@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página da Atividade Avaliativa</title>
+        <style>
+            :root {
+                --azulescuro: #08254F;
+                --corcreme: #D8D4CB;
+                --corbranca: #F0F0F0;
+                --sombra: rgba(0, 0, 0, .5);
+            }
+
+            *, *::before, *::after { /* CSS Reset */
+                box-sizing: border-box;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                margin: 0;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .centered-sect {
+                max-width: 980px;
+                margin-inline: auto;
+            }
+
+            .summary {
+                padding: 5rem;
+                background-color: var(--corcreme);
+                box-shadow: 0 0 2px var(--sombra);
+            }
+
+            .summary p {
+                color: var(--azulescuro);
+                font-size: 1.25rem;
+            }
+
+            .cards {
+                position: relative;
+                bottom: 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 4rem;
+            }
+
+            .cards > div {
+                color: var(--corbranca);
+                text-align: center;
+                padding: 1.5rem .5rem;
+                background-color: var(--azulescuro);
+                box-shadow: 0 0 2px var(--sombra);
+            }
+
+            .cards > div > h2 {
+                margin-bottom: 1rem;
+            }
+
+            .explanation {
+                padding: 2rem;
+                border: 3px solid var(--corcreme);
+                box-shadow: 0 0 2px var(--sombra);
+            }
+
+            .explanation p + p {
+                margin-top: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="summary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quas repellat voluptatem veritatis omnis? Eveniet natus sit, possimus nostrum incidunt necessitatibus harum sapiente sunt itaque mollitia saepe voluptate nihil, reiciendis tempore! Illum nulla eius illo.</p>
+        </section>
+
+        <section class="cards centered-sect">
+            <div>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <h2>Minus, itaque.</h2>
+                <p>Placeat omnis modi aspernatur tempore eius ad eos.</p>
+            </div>
+            <div>
+                <h2>Ullam, id.</h2>
+                <p>Ea autem earum voluptatibus aliquam natus repellat voluptatem.</p>
+            </div>
+        </section>
+
+        <section class="explanation centered-sect">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat provident quas veniam non corrupti excepturi eaque, labore error quaerat aliquid.</p>
+            <p>Vero fuga, temporibus a deleniti magnam reiciendis nemo vel mollitia, doloribus error illum rem maiores quisquam? Beatae corrupti atque alias?</p>
+            <p>Voluptatibus dignissimos laudantium ut quibusdam dolorum eos commodi. Error recusandae sunt magni impedit placeat. Doloribus vero provident earum quibusdam neque.</p>
+            <p>Corporis, tenetur incidunt. Aliquid praesentium, voluptate aspernatur quidem sed est beatae tenetur, error nisi suscipit modi reiciendis recusandae blanditiis molestiae?</p>
+            <p>Repellat quidem soluta libero nam laudantium tempora sapiente quo suscipit! Est voluptatibus quis commodi sint et, possimus eligendi eum reprehenderit.</p>
+        </section>
+    </body>
+</html>
