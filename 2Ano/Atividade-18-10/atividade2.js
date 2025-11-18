@@ -21,6 +21,9 @@ addName.addEventListener("click", () => {
 
     names.push(name);
     changeList(listNames, names);
+
+    inputName.value = "";
+    inputName.focus();
 });
 
 changeList(listNames, names); // Mostra os nomes iniciais.
