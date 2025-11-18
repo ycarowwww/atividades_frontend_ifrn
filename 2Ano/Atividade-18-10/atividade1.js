@@ -9,17 +9,37 @@ function changeBodyBgColor(buttonElement) {
     document.body.style.backgroundColor = color;
 }
 
-for (let i = 0; i < 100; i++) { // Cria 100 botões com cores aleatórias.
+function generateButton() {
     const newBtn = document.createElement("button");
+    newBtn.classList.add("change-background");
     const newBtnColor = generateRandomColor();
     newBtn.style.backgroundColor = `rgb(${newBtnColor[0]}, ${newBtnColor[1]}, ${newBtnColor[2]})`;
     document.body.appendChild(newBtn);
 }
 
+for (let i = 0; i < 100; i++) { // Cria 100 botões com cores aleatórias.
+    generateButton();
+}
+
+const addButton = document.getElementById("add-button");
+
 document.body.addEventListener("click", e => {
-    const buttonClicked = e.target.closest("button");
+    const buttonClicked = e.target.closest(".change-background");
 
     if (!buttonClicked) return; // Verifica se o clique não foi em um botão.
 
     changeBodyBgColor(buttonClicked);
 });
+
+addButton.addEventListener("click", () => {
+    generateButton();
+});
+
+setInterval(() => { // Muda as cores dos botões a cada 2 segundos.
+    const allButtons = document.getElementsByClassName("change-background");
+
+    for (const btn of allButtons) {
+        const newBtnColor = generateRandomColor();
+        btn.style.backgroundColor = `rgb(${newBtnColor[0]}, ${newBtnColor[1]}, ${newBtnColor[2]})`;
+    }
+}, 2000);

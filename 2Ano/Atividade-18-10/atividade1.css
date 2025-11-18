@@ -8,7 +8,26 @@
     margin: 0;
 }
 
-button {
+#add-button {
+    display: block;
+    color: #F0F0F0;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .4rem .6rem;
+    border: 2px solid #F0F0F0;
+    border-radius: .4rem;
+    background-color: #303030;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    transition: box-shadow .3s ease, background-color .3s ease;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background-color: #202020;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+button.change-background {
     width: 10rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
@@ -17,6 +36,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button.change-background:hover {
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
 }

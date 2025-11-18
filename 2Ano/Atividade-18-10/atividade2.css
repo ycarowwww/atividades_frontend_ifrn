@@ -13,10 +13,14 @@
     border: 1px solid black;
 }
 
-#add-name {
-    padding: .2rem .4rem;
+button {
+    padding: .2rem;
 }
 
 #list-names {
     margin-left: 1.5rem;
+}
+
+#list-names li + li {
+    margin-top: .5rem;
 }
