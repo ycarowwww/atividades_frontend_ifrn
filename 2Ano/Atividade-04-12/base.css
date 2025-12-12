@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+:root {
+    --fg-white-1: #F0F0F0;
+    --fg-white-2: #bfbfbf;
+    --bg-black-1: #545455;
+    --bg-black-2: #3f3f40;
+    --bg-black-3: #323234;
+    --col-blue-1: #5672ec;
+    --col-blue-2: #3e5eea;
+    --shadow: rgba(0, 0, 0, .5);
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    height: 100dvh;
+}
+
+header {
+    color: var(--fg-white-1);
+    background-color: var(--bg-black-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    box-shadow: 0 0 4px var(--shadow);
+}
+
+header nav {
+    flex-grow: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul a {
+    color: var(--fg-white-1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem .75rem;
+    transition: background-color .3s ease;
+}
+
+header nav ul a:hover {
+    background-color: var(--bg-black-2);
+}
+
+.theme-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid var(--bg-black-3);
+    border-radius: 50rem;
+    overflow: hidden;
+}
+
+.theme-switcher button {
+    color: var(--fg-white-1);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem;
+    background-color: var(--bg-black-1);
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.theme-switcher button:hover {
+    background-color: var(--bg-black-2);
+}
+
+.theme-switcher button.selected {
+    background-color: var(--bg-black-2);
+}
+
+.theme-switcher button.selected:hover {
+    background-color: var(--bg-black-3);
+}
+
+main {
+    color: var(--fg-white-1);
+    max-width: 600px;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 10rem;
+    margin-inline: auto;
+    background-color: var(--bg-black-1);
+    box-shadow: 0 0 4px var(--shadow);
+}
+
+main :where(input, label, button) {
+    display: block;
+}
+
+main p, label {
+    color: var(--fg-white-2);
+}
+
+main label {
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+main input {
+    color: var(--fg-white-1);
+    font-size: 1.05rem;
+    width: 100%;
+    padding: .3rem .5rem;
+    border-radius: .1rem;
+    margin-top: .25rem;
+    background-color: var(--bg-black-2);
+    box-shadow: 0 0 2px var(--shadow);
+    transition: background-color .3s ease;
+}
+
+main > a {
+    display: block;
+    text-align: right;
+}
+
+main a {
+    color: var(--col-blue-1);
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color .3s ease;
+}
+
+main a:hover {
+    color: var(--col-blue-2);
+    text-decoration: underline;
+}
+
+main button {
+    color: var(--fg-white-1);
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: .7rem 1.4rem;
+    border-radius: 1.4rem;
+    margin-block: .4rem 1.6rem;
+    background-color: var(--col-blue-1);
+    box-shadow: 0 0 2px var(--shadow);
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: var(--col-blue-2);
+}

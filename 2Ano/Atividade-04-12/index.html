@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade - Diferentes Temas</title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="light_theme.css" id="css-link">
+        <script defer src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <ul class="theme-switcher">
+                <li><button data-type="light" class="selected">Claro</button></li>
+                <li><button data-type="contrast">Alto Contraste</button></li>
+                <li><button data-type="dark">Escuro</button></li>
+            </ul>
+        </header>
+
+        <main>
+            <h1>Login</h1>
+            <p>Realize o Login da sua conta para continuar.</p>
+
+            <label for="input-email">Endereço de Email</label>
+            <input type="email" name="input-email" id="input-email" placeholder="nome@email.com">
+            
+            <label for="input-password">Senha</label>
+            <input type="password" name="input-password" id="input-password" placeholder="senha">
+            <a href="#">Esqueceu sua Senha?</a>
+
+            <button>Log In</button>
+
+            <p>Não cadastrado? <a href="#">Crie uma Conta</a></p>
+        </main>
+    </body>
+</html>

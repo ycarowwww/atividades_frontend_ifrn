@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+:root {
+    --fg-white-1: hsl(0, 0%, 10%);
+    --fg-white-2: hsl(0, 0%, 45%);
+    --bg-black-1: hsl(240, 1%, 80%);
+    --bg-black-2: hsl(240, 1%, 90%);
+    --bg-black-3: hsl(240, 2%, 95%);
+}
+
+body {
+    background-color: var(--bg-black-3);
+}
+
+header nav ul {
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+main input:focus {
+    background-color: var(--bg-black-3);
+}
+
+main a {
+    text-decoration: underline;
+}
+
+header, main, main button {
+    box-shadow: 0 0 6px var(--shadow);
+}

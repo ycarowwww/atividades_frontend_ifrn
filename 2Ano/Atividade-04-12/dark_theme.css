@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(135deg, var(--bg-black-1), var(--bg-black-3));
+}

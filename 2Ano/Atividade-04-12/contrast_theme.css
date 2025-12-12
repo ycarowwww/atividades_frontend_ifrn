@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+:root {
+    --fg-white-1: #ffffff;
+    --fg-white-2: #cccccc;
+    --bg-black-1: hsl(240, 0%, 20%);
+    --bg-black-2: hsl(240, 0%, 10%);
+    --bg-black-3: hsl(240, 0%, 0%);
+    --col-blue-1: hsl(230, 70%, 50%);
+    --col-blue-2: hsl(230, 70%, 70%);
+    --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-black-2);
+}
+
+header nav ul {
+    justify-content: center;
+}
+
+main {
+    width: 500px;
+}
+
+main h1 {
+    text-align: center;
+    text-shadow: 0 0 3px var(--shadow);
+}
+
+main a {
+    text-shadow: 0 0 3px var(--shadow);
+}
+
+main > a {
+    text-align: start;
+}
