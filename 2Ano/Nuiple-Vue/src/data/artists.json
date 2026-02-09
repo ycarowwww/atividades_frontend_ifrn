@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "3rd Prototype",
+        "platforms": {
+            "youtube": null,
+            "apple_music": "https://music.apple.com/br/artist/3rd-prototype/556294169",
+            "spotify": "https://open.spotify.com/artist/1zzlu7Aj6Dx6hFhS5sehOM"
+        },
+        "img": "3rdprototype.webp"
+    },
+    {
+        "id": 2,
+        "name": "Adele",
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "img": "adele.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Alan Walker",
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "img": "alanwaker.webp"
+    },
+    {
+        "id": 4,
+        "name": "Andreas Stone",
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "img": "andreas.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Denniz Jamm",
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "img": "denniz.jpg"
+    }
+]

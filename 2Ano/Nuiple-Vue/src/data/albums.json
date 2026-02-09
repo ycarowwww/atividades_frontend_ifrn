@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Dancefloor",
+        "platforms": {
+            "youtube": "https://www.youtube.com/watch?v=ZLohS_HScwc",
+            "apple_music": "https://music.apple.com/br/album/dancefloor-single/1868770314",
+            "spotify": "https://open.spotify.com/track/69AHzYqFBGgjdFhTDGzhuA"
+        },
+        "img": "dancefloor.jpg",
+        "year": 2018
+    },
+    {
+        "id": 2,
+        "name": "21",
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "img": "21.jpg",
+        "year": 2011
+    },
+    {
+        "id": 3,
+        "name": "Skyfall",
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "img": "skyfall.jpg",
+        "year": 2012
+    },
+    {
+        "id": 4,
+        "name": "Different World",
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "img": "differentworld.jpg",
+        "year": 2018
+    },
+    {
+        "id": 5,
+        "name": "Black Sunrise",
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "img": "blacksunrise.jpg",
+        "year": 2021
+    }
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "id": 1,
+        "title": "Dancefloor",
+        "artists": [
+            1
+        ],
+        "year": 2018,
+        "genres": [
+            "Future House"
+        ],
+        "platforms": {
+            "youtube": "https://www.youtube.com/watch?v=ZLohS_HScwc",
+            "apple_music": "https://music.apple.com/br/song/dancefloor/1868770315",
+            "spotify": "https://open.spotify.com/track/69AHzYqFBGgjdFhTDGzhuA"
+        },
+        "album": 1,
+        "file": "3rd Prototype - Dancefloor.mp3"
+    },
+    {
+        "id": 2,
+        "title": "Rolling in the Deep",
+        "artists": [
+            2
+        ],
+        "year": 2011,
+        "genres": [
+            "Pop"
+        ],
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "album": 2,
+        "file": "Adele - Rolling in the Deep.mp3"
+    },
+    {
+        "id": 3,
+        "title": "Someone Like You",
+        "artists": [
+            2
+        ],
+        "year": 2011,
+        "genres": [
+            "Pop"
+        ],
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "album": 2,
+        "file": "Adele - Someone Like You.mp3"
+    },
+    {
+        "id": 4,
+        "title": "Skyfall",
+        "artists": [
+            2
+        ],
+        "year": 2012,
+        "genres": [
+            "Pop"
+        ],
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "album": 3,
+        "file": "Adele - Skyfall.mp3"
+    },
+    {
+        "id": 5,
+        "title": "Faded",
+        "artists": [
+            3
+        ],
+        "year": 2018,
+        "genres": [
+            "Eletrônica"
+        ],
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "album": 4,
+        "file": "Alan Walker - Faded.mp3"
+    },
+    {
+        "id": 6,
+        "title": "Black Sunrise",
+        "artists": [
+            4,
+            5
+        ],
+        "year": 2021,
+        "genres": [
+            "Eletrônica"
+        ],
+        "platforms": {
+            "youtube": null,
+            "apple_music": null,
+            "spotify": null
+        },
+        "album": 5,
+        "file": "Andreas Stone With Denniz Jamm - Black Sunrise.mp3"
+    }
+]

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Aleo", serif;
+}
+
+:root {
+    --bg-color-1: #18181B;
+    --bg-color-2: #242429;
+    --bg-color-3: #303036;
+    --bg-color-4: #3C3C43;
+    --fg-color-1: #F0F0F0;
+    --fg-color-2: #787887;
+    --highlight-color: #2BCDEE;
+    --highlight-color-hover: #0D8CA5;
+    --shadow: rgba(0, 0, 0, .5);
+}
+
+body {
+    background-color: var(--bg-color-2);
+}
